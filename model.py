@@ -14,3 +14,19 @@ def export_contact(key_value):
         for row in reader:
             if key_value == row.get('last_name'):
                 print(row['first_name'], row['last_name'], row['phone'], row['description'])
+
+
+def preparing_data(contact_data):
+    new_item = ''
+    count = 0
+    result = []
+    if len(contact_data) > 3:
+        for i in range(3,len(contact_data)):
+            new_item = new_item + ' ' + contact_data[i]
+            count += 1
+        for i in range(count):
+            contact_data.pop()
+    contact_data.append(new_item)
+    result.extend(contact_data)
+    return result
+
