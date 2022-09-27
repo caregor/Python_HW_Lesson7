@@ -14,6 +14,8 @@ def export_contact(key_value):
         for row in reader:
             if key_value == row.get('last_name'):
                 print(row['first_name'], row['last_name'], row['phone'], row['description'])
+            else:
+                print('Contact does not exist.')
 
 
 def preparing_data(contact_data):

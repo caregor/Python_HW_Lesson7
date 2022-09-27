@@ -10,4 +10,4 @@ def main():
         view.good_result()
     else:
         get_name = view.get_contact()
-        model.export_contact(get_name)
+        model.export_contact(get_name.capitalize())

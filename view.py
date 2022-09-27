@@ -5,7 +5,7 @@ def mode():
 
 
 def get_contact():
-    return input('Enter last name: ')
+    return input('Enter last name (ex. Smith): ')
 
 
 def import_contact():
